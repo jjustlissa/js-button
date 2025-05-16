@@ -8,6 +8,13 @@
   <button onclick="ClickMe()">Click me!</button>
   <button onclick="PressIt()">Press it!</button>
   <button onclick="MyName()">My Name</button>
+  
+ 
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button onclick="HelloYou()">Get Hello</button>
+  <input type="text" id="ageInput" placeholder="Enter your age" >
+   <button onclick="YourAge()">Your age</button>
+  
   <script>
     function ClickMe() {
       alert("Hello, this is your first JS alert!");
@@ -17,6 +24,14 @@
     }
     function MyName() {
       alert("My name is Yelyzaveta Pinchuk");
+    }
+    function HelloYou() {
+      let name = document.getElementById("nameInput").value;
+      alert("Hello" + name +"!")
+    }
+    function YourAge() {
+      let age = document.getElementById("ageInput").value;
+      alert("You are" + age + " years old." )
     }
   </script>
 </body>
