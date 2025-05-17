@@ -13,7 +13,7 @@
   <input type="text" id="nameInput" placeholder="Enter your name">
   <button onclick="HelloYou()">Get Hello</button>
   <input type="text" id="ageInput" placeholder="Enter your age" >
-   <button onclick="YourAge()">Your age</button>
+   <button onclick="CheckAge()">Check</button>
   
   <script>
     function ClickMe() {
@@ -29,10 +29,16 @@
       let name = document.getElementById("nameInput").value;
       alert("Hello" + name +"!")
     }
-    function YourAge() {
+    function CheckAge() {
       let age = document.getElementById("ageInput").value;
-      alert("You are" + age + " years old." )
+      if (age >= 18) {
+        alert("You are old enough to vote.");
+      }
+      else {
+        alert("You are NOT old enough to vote.");
+      }
     }
+
   </script>
 </body>
 </html>
